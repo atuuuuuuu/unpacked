@@ -1,0 +1,30 @@
+name: New platform
+description: Propose (or volunteer to build) support for another export
+labels: [new-platform, help wanted]
+body:
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      placeholder: Netflix
+    validations:
+      required: true
+  - type: textarea
+    id: questions
+    attributes:
+      label: What would people want to know?
+      description: The questions a dashboard should answer.
+      placeholder: Most-watched shows, binge nights, hours per year…
+    validations:
+      required: true
+  - type: textarea
+    id: export
+    attributes:
+      label: How to get the export, and what's inside
+      description: Steps to request it, file names and the shape of the records (field names only, no real data).
+  - type: checkboxes
+    id: build
+    attributes:
+      label: Building it
+      options:
+        - label: I'd like to build this myself (see docs/adding-a-platform.md)

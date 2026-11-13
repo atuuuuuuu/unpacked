@@ -1,0 +1,13 @@
+node_modules
+dist
+dev-dist
+playwright-report
+test-results
+e2e/.fixtures
+*.local
+.DS_Store
+# Never commit real data exports
+*.zip
+!docs/**/*.zip
+docs/media/.video
+docs/media/demo.webm
